@@ -1,4 +1,8 @@
-### Tache
+# StadLine Technical Test
+
+## Présentation générale
+
+### Tâche
 
 Le sujet de base est simple : il faut créer un site permettant la gestion de sorties de courses à pied.
 
