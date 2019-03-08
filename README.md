@@ -61,11 +61,12 @@ Voici quelques idées (liste non ordonnée) :
 * Ecran : permettre à l'utilsiateur de lister ses records (1km, 5km, 10km) :
 
 Pour le calcul du record, on admet que l'utilisateur court de manière très régulière
-Exemple : 
-    Sortie de 2h pour 20km, les records de l'utilisateur **pour cette sortie** sont :
-    * 1km : 6min (120min / 20)
-    * 5km : 30min (120min / 4)
-    * 10km : 1h (120min / 2)
+
+Exemple : sortie de 2h pour 20km, les records de l'utilisateur **pour cette sortie** sont :
+    
+* 1km : 6min (120min / 20)
+* 5km : 30min (120min / 4)
+* 10km : 1h (120min / 2)
 
 Reste donc à calculer les meilleurs temps pour chaque distance et chaque utilisateur.
 
