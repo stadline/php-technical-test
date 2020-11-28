@@ -1,0 +1,48 @@
+{% block body %}
+    <div class="container">
+        <div class="row">
+            <h1>Course #{{ run.id }}</h1>
+        </div>
+
+        <div class="row">
+            <div class="container">
+                {{ form_start(form) }}
+
+                <div class="row">
+                    {{ form_errors(form) }}
+                </div>
+
+                <div class="row">
+                    {{ form_label(form.type) }}
+                    {{ form_widget(form.type) }}
+                </div>
+
+                <div class="row">
+                    {{ form_label(form.start) }}
+                    {{ form_widget(form.start) }}
+                </div>
+
+                <div class="row">
+                    {{ form_label(form.duration) }}
+                    {{ form_widget(form.duration) }}
+                </div>
+
+                <div class="row">
+                    {{ form_label(form.distance) }}
+                    {{ form_widget(form.distance) }}
+                </div>
+
+                <div class="row">
+                    {{ form_label(form.comment) }}
+                    {{ form_widget(form.comment) }}
+                </div>
+
+                <div class="row">
+                    {{ form_widget((form.submit)) }}
+                </div>
+
+                {{ form_end(form) }}
+            </div>
+        </div>
+    </div>
+{% endblock %}

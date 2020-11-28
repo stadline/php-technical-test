@@ -26,6 +26,14 @@ class RunningSessionType
     protected $name;
 
     /**
+     * @return string
+     */
+    public function __toString(): string
+    {
+        return $this->name ?? 'Nouveau type';
+    }
+
+    /**
      * @return int
      */
     public function getId(): int

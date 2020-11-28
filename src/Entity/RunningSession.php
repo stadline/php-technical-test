@@ -205,7 +205,7 @@ class RunningSession
     /**
      * @return RunningSessionType
      */
-    public function getType(): ?RunningSessionType
+    public function getType()
     {
         return $this->type;
     }
