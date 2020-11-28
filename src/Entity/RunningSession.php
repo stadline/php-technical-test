@@ -45,6 +45,20 @@ class RunningSession
     protected $comment;
 
     /**
+     * @var float
+     *
+     * @ORM\Column(type="float")
+     */
+    protected $averageSpeed;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(type="integer")
+     */
+    protected $pace;
+
+    /**
      * @var RunningSessionType
      *
      * @ORM\ManyToOne(targetEntity="App\Entity\RunningSessionType")
@@ -144,6 +158,46 @@ class RunningSession
     public function setComment(?string $comment): RunningSession
     {
         $this->comment = $comment;
+
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getAverageSpeed(): ?float
+    {
+        return $this->averageSpeed;
+    }
+
+    /**
+     * @param float $averageSpeed
+     *
+     * @return RunningSession
+     */
+    public function setAverageSpeed(float $averageSpeed): RunningSession
+    {
+        $this->averageSpeed = $averageSpeed;
+
+        return $this;
+    }
+
+    /**
+     * @return int
+     */
+    public function getPace(): ?int
+    {
+        return $this->pace;
+    }
+
+    /**
+     * @param int $pace
+     *
+     * @return RunningSession
+     */
+    public function setPace(int $pace): RunningSession
+    {
+        $this->pace = $pace;
 
         return $this;
     }
