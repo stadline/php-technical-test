@@ -89,3 +89,21 @@ Reste donc à calculer les meilleurs temps pour chaque distance et chaque utilis
 * Envoyez le lien avec le projet à recrutement@stadline.com.
 
 Bonne chance !
+
+## Bilan
+
+# Temps passé
+
+Un peu moins de 4h
+
+# Tests
+
+Connexion possible avec les comptes :
+* jean@bond.com / Azerty123!
+* jean@michel.com / Azerty123!
+
+Le projet "classique" se lance sur la page principale "/".
+L'api se retrouve sur "/api" avec les URIs suivantes :
+* /api/runs => Retourne toutes les sessions
+* /api/users/{id}/runs => Retourne les sessions d'un utilisateur
+* /api/runs/{id} => Retourne les informations d'une session
