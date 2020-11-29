@@ -3,6 +3,7 @@
 namespace App\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Serializer\Annotation\Groups;
 
 /**
  * @ORM\Entity
@@ -13,6 +14,8 @@ class RunningSession
      * @ORM\Id
      * @ORM\GeneratedValue
      * @ORM\Column(type="integer")
+     *
+     * @Groups({"running_session"})
      */
     protected $id;
 
@@ -20,6 +23,8 @@ class RunningSession
      * @var \DateTime
      *
      * @ORM\Column(type="datetime")
+     *
+     * @Groups({"running_session"})
      */
     protected $start;
 
@@ -27,6 +32,8 @@ class RunningSession
      * @var int
      *
      * @ORM\Column(type="integer")
+     *
+     * @Groups({"running_session"})
      */
     protected $duration;
 
@@ -34,6 +41,8 @@ class RunningSession
      * @var float
      *
      * @ORM\Column(type="float")
+     *
+     * @Groups({"running_session"})
      */
     protected $distance;
 
@@ -41,6 +50,8 @@ class RunningSession
      * @var string|null
      *
      * @ORM\Column(type="text", nullable=true)
+     *
+     * @Groups({"running_session"})
      */
     protected $comment;
 
@@ -48,6 +59,8 @@ class RunningSession
      * @var float
      *
      * @ORM\Column(type="float")
+     *
+     * @Groups({"running_session"})
      */
     protected $averageSpeed;
 
@@ -55,6 +68,8 @@ class RunningSession
      * @var int
      *
      * @ORM\Column(type="integer")
+     *
+     * @Groups({"running_session"})
      */
     protected $pace;
 
@@ -63,6 +78,8 @@ class RunningSession
      *
      * @ORM\ManyToOne(targetEntity="App\Entity\RunningSessionType")
      * @ORM\Column(nullable=false)
+     *
+     * @Groups({"running_session"})
      */
     protected $type;
 
@@ -71,6 +88,8 @@ class RunningSession
      *
      * @ORM\ManyToOne(targetEntity="App\Entity\User", inversedBy="runningSessions")
      * @ORM\JoinColumn(nullable=false)
+     *
+     * @Groups({"running_session"})
      */
     protected $user;
 
